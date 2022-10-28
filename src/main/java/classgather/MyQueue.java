@@ -1,10 +1,8 @@
+package classgather;
+
 import java.util.ArrayList;
 
 public class MyQueue<T> {
-    public static void main(String[] args) {
-
-
-    }
     private ArrayList<T> queue = new ArrayList<T>();
 
     public void enqueue(T item) {
@@ -17,13 +15,9 @@ public class MyQueue<T> {
         }
         return queue.remove(0);
     }
-
     public boolean isEmpty() {
         return queue.isEmpty();
     }
-
-
-
 }
 
 
