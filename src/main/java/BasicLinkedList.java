@@ -30,16 +30,33 @@ public class BasicLinkedList {
 //    MyLinkedList.addNode(1);
 
     public static void main(String[] args) {
-        Node<Integer> MyLinkedList = new Node<Integer>();
-        MyLinkedList.addNode(1);
-        System.out.println("나는 head : " + MyLinkedList.head.data);
+//        Node<Integer> MyLinkedList = new Node<Integer>();
+//        MyLinkedList.addNode(1);
+//        System.out.println("나는 head : " + MyLinkedList.head.data);
+//
+//        MyLinkedList.addNode(2);
+//        System.out.println("나는 next : " + MyLinkedList.head.next.data);
+//
+//        MyLinkedList.addNode(3);
+//        MyLinkedList.printAll();
 
-        MyLinkedList.addNode(2);
-        System.out.println("나는 next : " + MyLinkedList.head.next.data);
+        Node<Integer> MyLinkedList2 = new Node<Integer>();
+        MyLinkedList2.addNode(1);
+        MyLinkedList2.addNode(2);
+        MyLinkedList2.addNode(3);
+        MyLinkedList2.addNode(4);
+        MyLinkedList2.addNode(5);
 
-        MyLinkedList.addNode(3);
-        MyLinkedList.printAll();
 
+        // 5라는 데이터를 넣고 1 데이터 뒤에 넣겠다.
+//        MyLinkedList2.addNodeInside(5, 1);
+//        // 없는 노드 데이터를 입력하면 제일 마지막에 저장된다.
+//        MyLinkedList2.addNodeInside(7, 20);
+//        MyLinkedList2.printAll();
+
+        // 헤드삭제, 중간삭제, 마지막데이터 삭제로 테스트 완료
+        MyLinkedList2.delNode(5);
+        MyLinkedList2.printAll();
     }
 
 
